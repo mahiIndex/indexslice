@@ -1,0 +1,539 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" class="es" lang="es">
+
+<!-- Mirrored from www.dibiz.com/es by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2021 04:03:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c81e615108","applicationID":"376759191","transactionName":"dVdZRBEJWwhQQk4OV1tdGFkNAlIc","queueTime":548,"applicationTime":1463,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"c81e615108",applicationID:"376759191"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <script>var dataLayer = [];dataLayer.push({'viewType': 'website', 'lang': 'es', 'device': 'desktop'}); var siteURL = 'index.html';</script>
+    		<!-- Google Optimize + Analytics -->
+			<!-- <style>.async-hide { opacity: 0 !important}</style>
+			<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+			h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+			(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+			})(window,document.documentElement,'async-hide','dataLayer',4000,
+			{'GTM-N2BHN6Q':true});
+			</script> -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-88256025-2', 'auto'); 
+		</script>
+		<!-- End Analytics -->
+
+    		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TVQN7D6');</script>
+		<!-- End Google Tag Manager -->
+
+
+    <!-- test for changeing the icon of the chrom adress bar -->
+    <meta name="theme-color" content="#000">
+    <!-- test for changeing the icon of the chrom adress bar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <title>Dibiz - Get Your Free Digital Business Cards</title>
+    <meta name="description" content="Finally, a Digital Business Card that is Smart. Elegant. Affordable. Try out our designed Digital Business Card today."/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../d2105m540nvnaz.cloudfront.net/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../d2105m540nvnaz.cloudfront.net/assets/favicon-32x32.png">
+    <link rel="canonical" href="es.html">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dibiz - Get Your Free Digital Business Cards" />
+    <meta property="og:description" content="Finally, a Digital Business Card that is Smart. Elegant. Affordable. Try out our designed Digital Business Card today." />
+    <meta property="og:url" content="https://www.dibiz.com/es">
+    <meta property="og:site_name" content="DIBIZ - Digital Business Cards" />
+    <meta property="og:image" content="https://d2105m540nvnaz.cloudfront.net/assets/home/dibiz-profile.png" />
+    <meta property="fb:app_id" content="899643856837433" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Finally, a Digital Business Card that is Smart. Elegant. Affordable. Try out our designed Digital Business Card today." />
+    <meta name="twitter:title" content="Dibiz - Get Your Free Digital Business Cards" />
+    <!-- <link rel='stylesheet' id='font-awesome.min-css'  href='https://d2105m540nvnaz.cloudfront.net/assets/font-awesome.min.css' type='text/css' media='all' /> -->
+    <link rel="stylesheet" id="font-awesome.min-css" href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all">
+    <link href="../d2105m540nvnaz.cloudfront.net/assets/home/css_002.css" rel="stylesheet">
+    <link href="../d2105m540nvnaz.cloudfront.net/assets/home/css.css" rel="stylesheet">
+    <link rel='stylesheet' id='noyah_reset-css'  href='../d2105m540nvnaz.cloudfront.net/assets/home/reset.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap.min-css'  href='../d2105m540nvnaz.cloudfront.net/assets/home/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='animate.min-css'  href='../d2105m540nvnaz.cloudfront.net/assets/home/animate.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='owl.carousel-css'  href='../d2105m540nvnaz.cloudfront.net/assets/home/owl.carousel.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='lity.min-css'  href='../d2105m540nvnaz.cloudfront.net/assets/home/lity.min.css' type='text/css' media='all' />    
+    <link rel="stylesheet" media="all" href="../d2105m540nvnaz.cloudfront.net/assets/home-bfab9fee0bd88831e62b5e5062b311056daf724e64eeb6b07daed8081d47b33e.css" />
+    <link rel='stylesheet' id='righteous-google-font-css'  href='https://fonts.googleapis.com/css?family=Righteous&amp;ver=4.7.3' type='text/css' media='all' />
+    <link rel="stylesheet" id="righteous-google-font-css" href="../d2105m540nvnaz.cloudfront.net/assets/home/css_003.css" type="text/css" media="all">
+    <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/jquery.js'></script>
+    <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/jquery-migrate.min.js'></script>
+    <!-- <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+    <style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style> -->
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="XR/OQRmG+WLKLobwOpZAOcfDFow0g/2f5dkDpdm9cek62/oX2ns3+EWKXruC1tsWovEKjq7vyt1aTz1/9avrXg==" />
+</head>
+<body class="home page-template page-template-tpl-vc page-template-tpl-vc-php page page-id-6 wpb-js-composer js-comp-ver-5.0.1 vc_responsive">
+        		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVQN7D6"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+ 	    <main id="panel">
+            <div class="wrapper">
+                <header class="sticky navbar-fixed-top">
+            <div class="container-fluid nav-constraint animated fadeInDown dp3">
+                <nav class="navbar navbar-inverse">
+                    <!-- <div class="container1"> -->
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <a href="#" class="navbar-toggle collapsed cd-nav-trigger sr-only" data-toggle="collapse" data-target="#bs-main-navbar-collapse" aria-expanded="false">
+                                <span class="cd-nav-icon"></span>
+                            </a>
+
+                            <a class="button mobile-only main-cta" href="es/signup.html">Consigue la tuya gratis</a>
+
+                            <a class="logo" href="es.html">DIBIZ</a>
+
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-main-navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+                            <li>
+                                    <a href="#features">Funciones</a>
+                            </li>
+                            <li>
+                                    <a href="#examples">Ejemplos</a>
+                            </li>
+                            <li>
+                                <a href="es/pricing.html">Precios</a>
+                            </li>
+                            <li id="nav-how">
+                                <a href="es/how.html">¿Cómo funciona?</a>
+                            </li>
+                            <li class="lang-switcher">                                                                
+                                <span class="current-lang"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Español&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                <div class="lang-list-wrap"><ul class="lang-list">
+                                    <li class="">
+                                            <span><i class="fa fa-check" aria-hidden="true"></i> <a href="en.html">English</a></span>
+                                        </li><li class="">
+                                            <span><i class="fa fa-check" aria-hidden="true"></i> <a href="de.html">Deutsch</a></span>
+                                        </li><li class="active-lang">
+                                            <span><i class="fa fa-check" aria-hidden="true"></i> <a href="es.html">Español</a></span>
+                                        </li><li class="">
+                                            <span><i class="fa fa-check" aria-hidden="true"></i> <a href="fr.html">Français</a></span>
+                                        </li><li class="">
+                                            <span><i class="fa fa-check" aria-hidden="true"></i> <a href="zh.html">简体中文</a></span>
+                                        </li><li class="">
+                                            <span><i class="fa fa-check" aria-hidden="true"></i> <a href="ru.html">русский</a></span>
+                                        </li><li class="">
+                                            <span><i class="fa fa-check" aria-hidden="true"></i> <a href="ar.html">عربى</a></span>
+                                        </li><li class="">
+                                            <span><i class="fa fa-check" aria-hidden="true"></i> <a href="he.html">עברית</a></span>
+                                        </li>
+                                </ul></div>
+                            </li>
+                             
+                            <li><a class="button dl login" href="#" data-toggle="modal" data-target="#myModal">Iniciar sesión</a></li>
+                            <li><a class="button dl cta" href="es/signup.html">Consigue la tuya gratis</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    <!-- </div> -->
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+</header>
+                <section id="home" style="padding:0px !important; margin:0px !important;">
+    <h2 style="display:none">empty error</h2>
+    <div class=" general-row" style="">
+        <div class="wpb_column " style="">
+            <section id="top" class="homepage-main-image-faces">
+                <div class="shader"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 page-title fade-left delay2 slide-text dp2 animated fadeInLeft">
+                             <img class="mobile-only" src="../d2105m540nvnaz.cloudfront.net/assets/home/slide-faces.jpg" alt="" />
+                             <!-- <img class="mobile-only bf-mobile" src="assets/home/cm/cm-mobile.png" alt="" /> -->
+
+                            <h1 class="ban_title"><span class="lblue">Inspira</span> a tus clientes.<br> Tarjeta Digital. <!-- A free way to Digitally inspire your clients.--></h1>
+                            <h3 class="ban_subtitle">Dibiz es un nuevo tipo <span class="lblue">de tarjeta comercial,</span> es inteligente, elegante y asequible.</h3>
+                            <div class="dl-icons helo_img">
+                                    <a class="pull-right video-lity mobile-only" data-lity="true" href="https://www.youtube.com/watch?v=ITzAIWhdn_I">
+                                        <i class="fa fa-play-circle"></i> Reproduce video
+</a>                                <ul>
+                                    <li><i class="fa fa-paint-brush" aria-hidden="true"></i>Diséñala tú mismo</li>
+                                    <li><i class="fa fa-picture-o" aria-hidden="true"></i>Exhibe tu trabajo</li>
+                                    <li><i class="fa fa-share-alt" aria-hidden="true"></i>Compártela desde cualquier lugar</li>
+                                    <li><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Goza de comercialización viral efectiva</li>
+                                </ul>
+                                <div class="btn-wrapper">
+                                    <a class="pull-left button dl main-cta" href="es/signup.html">
+                                        <i class="fa fa-hand-o-right"></i>Crea la tuya. Es gratis.
+</a>                                        <a class="pull-right video-lity desktop-only" data-lity="true" href="https://www.youtube.com/watch?v=ITzAIWhdn_I">
+                                            <i class="fa fa-play-circle"></i> Reproduce video
+</a>                                </div>
+                                <div id="mobile-alt-login" class="hidden-md hidden-lg">
+                                    o
+                                    <a href="#" data-toggle="modal" data-target="#myModal">Iniciar sesión</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+           <section id="stats">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Únete a nuestra comunidad y transformemos las Tarjetas Comerciales Digitales en algo común</h2>
+                        </div>
+                    </div>
+                    <div class="row stats-inner">
+                        <div class="col-md-4">
+                            <div class="ttl-stat fadeInDown delay3 animated"><span>374,253 </span></div>
+                            <div class="desc-stat"><span>CLIENTES</span></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ttl-stat fadeInDown delay3 animated"><span>22,419,297</span></div>
+                            <div class="desc-stat"><span>TARJETAS COMPARTIDAS</span></div>
+                        </div>
+                        <div class="col-md-4 trees">
+                            <div class="ttl-stat fadeInDown delay3 animated"><span>Millones</span></div>
+                            <div class="desc-stat"><span>DE ÁRBOLES A SALVAR</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="clients">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>&nbsp;</h2>
+                        </div>
+                    </div>
+                    <div class="row clients-inner">
+                        <div class="col-md-2">
+                            <img src="../d2105m540nvnaz.cloudfront.net/assets/home/logos/REMAX.png" alt="Remax" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../d2105m540nvnaz.cloudfront.net/assets/home/logos/TD_Bank.png" alt="TD Bank" />
+                        </div>
+                        <div class="col-md-2" id="toyota">
+                            <img src="../d2105m540nvnaz.cloudfront.net/assets/home/logos/Toyota.png" alt="Toyota" />
+                        </div>
+                        <div class="col-md-2" id="lancome">
+                            <img src="../d2105m540nvnaz.cloudfront.net/assets/home/logos/lancome.png" alt="Lancome" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="../d2105m540nvnaz.cloudfront.net/assets/home/logos/ford.png" alt="Ford" />
+                        </div>
+                        <div class="col-md-2" id="jeep">
+                            <img src="../d2105m540nvnaz.cloudfront.net/assets/home/logos/Jeep.png" alt="Jeep" />
+                        </div>
+                    </div>
+                </div>
+             </section>
+
+            <section id="features" data-anchor="features">
+                <div class="container-fluid">
+                    <div class="row" id="d_age">
+                        <div class="col-md-5" style=" background:url(../d2105m540nvnaz.cloudfront.net/assets/home/feature1.jpg) repeat scroll center top / cover; min-height:361px; padding-bottom: 31%;">
+                        </div>
+                        <div class="col-md-7">
+                            <h4 class="fade-right animated fadeInRight">Las tarjetas comerciales<br/>amoldadas a la era digital</h4>
+                            <p class="fade-right animated fadeInRight">Diseña tu tarjeta comercial en dos minutos - es fácil, elegante y gratis. DIBIZ está siempre en tu bolsillo, nunca se rompe ni se acaba. Tu DIBIZ puede ser actualizada fácilmente gracias al simple panel de control, por lo tanto no tendrás que volver a imprimir tu tarjeta.</p>
+                        </div>
+                    </div>
+                    <div class="row opposite-col-dir" id="possib">
+                        <div class="col-md-5" style="background:url(../d2105m540nvnaz.cloudfront.net/assets/home/feature2.jpg) repeat scroll center top / cover; min-height:393px; padding-bottom: 31%;">
+                        </div>
+                        <div class="col-md-7">
+                            <h4 class="fade-left animated fadeInLeft">Una tarjeta comercial.<br>Infinitas posibilidades.</h4>
+                            <p class="fade-left animated fadeInLeft">Exprésate con una tarjeta comercial de modos imposibles hasta hoy. Puedes exhibir tu trabajo cargando buen contenido como fotos, videos y enlaces personalizados.</p>
+                        </div>
+                    </div>
+                    <div class="row" id="mobility">
+                        <div class="col-md-5" style=" background:url(../d2105m540nvnaz.cloudfront.net/assets/home/feature3.jpg) repeat scroll center top / cover; min-height:343px; padding-bottom: 31%;">
+                        </div>
+                        <div class="col-md-7">
+                            <h4 class="fade-right animated fadeInRight">La movilidad en su máxima expresión</h4>
+                            <p class="fade-right animated fadeInRight">El camino más corto a tus clientes es a través de sus teléfonos móviles. Utiliza las opciones que brindamos para dar a conocer tu marca y hazla viral compartiendo tu DIBIZ con clientes y amigos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="how_it_work_new_block" data-anchor="how_it_work">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 center f_t" style="">
+                            <h2>¿Cómo funciona?</h2>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 item">
+                            <div class="image">
+                                <img src="../d2105m540nvnaz.cloudfront.net/assets/how-it-works/img_sec1.png" alt="Se crea la cuenta de DIBIZ" />
+                                <div class="num">1</div>
+
+                            </div>
+                            <div class="title">Se crea la cuenta de DIBIZ</div>
+                            <div class="subtitle"> <u><a href="es/signup.html">aquí en sólo 2 minutos</a></u></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 item">
+                            <div class="image">
+                                <img src="../d2105m540nvnaz.cloudfront.net/assets/how-it-works/img_sec2.png" alt="Se guarda DIBIZ" />
+                                <div class="num">2</div>
+
+                            </div>
+                            <div class="title">Se guarda DIBIZ</div>
+                            <div class="subtitle">en la pantalla de inicio de tu teléfono móvil</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 item">
+                            <div class="image">
+                                <img src="../d2105m540nvnaz.cloudfront.net/assets/how-it-works/img_sec3.png" alt="Se comparte DIBIZ entre clientes y colegas" />
+                                <div class="num">3</div>
+                            </div>
+                            <div class="title">Se comparte DIBIZ entre clientes y colegas</div>
+                            <div class="subtitle">según tu preferencia :  SMS, WhatsApp, Facebook, email</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="text-align: center;">
+                        <a class="button main-cta bottom" href="es/how.html">Aprende más</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="examples" data-anchor="examples">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 center f_t" style="">
+                            <h2>Destacados ejemplos de nuestra comunidad</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 feature-phone center col-md-push-4 f_t owl-outer">
+                            <div class="fp elay6 owl-carousel-wrapper">
+                                <div class="item" data-id="1"><img src="../d2105m540nvnaz.cloudfront.net/assets/examples/orelia-example.jpg" alt="" /></div>
+                                <div class="item" data-id="2"><img src="../d2105m540nvnaz.cloudfront.net/assets/examples/michael-chef.jpg" alt="" /></div>
+                                <div class="item" data-id="3"><img src="../d2105m540nvnaz.cloudfront.net/assets/examples/sven-example.jpg" alt="" /></div>
+                                <div class="item" data-id="4"><img src="../d2105m540nvnaz.cloudfront.net/assets/examples/douglas.jpg" alt="" /></div>
+                                <div class="item" data-id="5"><img src="../d2105m540nvnaz.cloudfront.net/assets/examples/jennifer-example2.jpg" alt="" /></div>
+                                <div class="item" data-id="6"><img src="../d2105m540nvnaz.cloudfront.net/assets/examples/oliver-example.jpg" alt="" /></div>
+
+                            </div>
+                        </div>
+                        <!-- Hidden data for managin onchange / onclick event -->
+                        <div class="thumbs">
+                            <div class="thumb" data-id="1"></div>
+                            <div class="thumb" data-id="2"></div>
+                            <div class="thumb" data-id="3"></div>
+                            <div class="thumb" data-id="4"></div>
+                            <div class="thumb" data-id="5"></div>
+                            <div class="thumb" data-id="6"></div>
+                        </div>
+                        <div id="carousel-custom-dots">
+                        <div class="col-xs-12 col-sm-6 col-md-4 align-right col-md-pull-4 f_t" style="height: 617px;">
+                            <div class="contain_feature ">
+                                <div class="example-item active pos-relative" data-id="1">
+                                    <div class="user-perm">
+                                        Usuario Premium
+                                    </div>
+                                    <div class="image">
+                                        <img src="../d2105m540nvnaz.cloudfront.net/assets/examples/orelia.jpg">
+                                    </div>
+                                    <div class="text-exp">
+                                        <div class="name">Orelia</div>
+                                        <div class="desc">Fotógrafo de eventos
+                                            <br>Moscú, Rusia</div>
+                                    </div>
+                                </div>
+                                <div class="example-item pos-relative" data-id="2">
+                                    <div class="user-perm">
+                                        Usuario Premium
+                                    </div>
+                                    <div class="image">
+                                        <img src="../d2105m540nvnaz.cloudfront.net/assets/examples/michael-chef.png">
+                                    </div>
+                                    <div class="text-exp">
+                                        <div class="name">Peter Michael</div>
+                                        <div class="desc">Chef de repostería profesional
+                                            <br>San Francisco, CA</div>
+                                    </div>
+                                </div>
+                                <div class="example-item pos-relative" data-id="3">
+                                    <div class="user-perm">
+                                        Usuario libre
+                                    </div>
+                                    <div class="image">
+                                        <img src="../d2105m540nvnaz.cloudfront.net/assets/examples/danny-profile.png">
+                                    </div>
+                                    <div class="text-exp">
+                                        <div class="name">Sven</div>
+                                        <div class="desc">Agente de bienes raíces
+                                            <br>Suecia</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 align-left f_t" style="height: 617px;">
+                            <div class="contain_feature">
+                                <div class="example-item pos-relative" data-id="4">
+                                    <div class="user-perm">
+                                        Usuario Premium
+                                    </div>
+                                    <div class="image">
+                                        <img src="../d2105m540nvnaz.cloudfront.net/assets/examples/douglas-profile.png">
+                                    </div>
+                                    <div class="text-exp">
+                                        <div class="name">Daniel Douglas</div>
+                                        <div class="desc">Cantante principal
+                                            <br>Grayling, MA</div>
+                                    </div>
+                                </div>
+                                <div class="example-item pos-relative" data-id="5">
+                                    <div class="user-perm">
+                                        Usuario Premium
+                                    </div>
+                                    <div class="image">
+                                        <img src="../d2105m540nvnaz.cloudfront.net/assets/examples/lady.jpg">
+                                    </div>
+                                    <div class="text-exp">
+                                        <div class="name">Jennifer Rodriguez</div>
+                                        <div class="desc">Diseñador
+                                            <br>Long Island, NY</div>
+                                    </div>
+                                </div>
+                                <div class="example-item pos-relative" data-id="6">
+                                    <div class="user-perm">
+                                        Usuario libre
+                                    </div>
+                                    <div class="image">
+                                        <img src="../d2105m540nvnaz.cloudfront.net/assets/examples/architect.jpg">
+                                    </div>
+                                    <div class="text-exp">
+                                        <div class="name">Oliver Baker</div>
+                                        <div class="desc">Arquitecto
+                                            <br>Manchester, Inglaterra</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                        <a class="button main-cta bottom" href="es/signup.html">
+                                        <i class="fa fa-hand-o-right"></i>Crea la tuya. Es gratis.
+</a>                    <br>
+                    <br>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+    <!-- End Home Section -->
+<div class="clearfix"></div>
+
+<!-- BANNER POP UP -->
+
+<!-- Thank you for contacting us -->
+
+
+<link rel="stylesheet" media="all" href="../d2105m540nvnaz.cloudfront.net/assets/swiper.min.css">
+<script src="../d2105m540nvnaz.cloudfront.net/assets/swiper.min.js"></script>
+<script src="../d2105m540nvnaz.cloudfront.net/assets/home-fcffaee41a68c36c7e7497c095b32092014706e4eba19a63c6e70e97ec92bb3b.js"></script>
+
+    <!-- <script>
+        // auto open the banner
+        setTimeout(function(){ jQuery('#myBannerModal').modal('show') }, 15000);
+    </script> -->
+
+
+
+<!-- <script>
+    jQuery('#contact_form').live('submit', function(e){
+        e.preventDefault();
+        var thisform = this;
+        var fields = $(this).serialize();
+        var url= $(this).attr('action');
+        //alert(url);
+        jQuery.ajax({
+            url: url,
+            type: 'POST',
+            data: fields,
+            success:function(res){
+                //salert(res);
+                $('.messages', thisform).html(res);
+            }
+        });
+    });
+</script> -->
+
+                <div class="copy">
+    <a class="logo" href="es.html">
+            DIBIZ <small>Digital Business Cards</small>
+</a></div>
+            </div>
+        </main>
+        <!-- Log in Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-title">Iniciar sesión</span>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form class="new_user" id="new_user" action="https://www.dibiz.com/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Ylk4Glx0GREf7Zorkp0boX/1T/Vvyz/YEC9ZaYMJwcUFnQxMn4nXi5BJQmAq3YCOGsdT9/WnCJqvuWezrx9bcg==" />
+  
+  <div class="field">
+    <label for="user_Email Address">Email address</label>
+    <input autofocus="autofocus" value="" placeholder="Email Address" type="email" name="user[email]" id="user_email" />
+  </div>
+
+  <div class="field">
+    <label for="user_Password">Password</label>
+    <input autocomplete="off" placeholder="Password" type="password" name="user[password]" id="user_password" />
+  </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Log in" data-disable-with="Log in" />
+  </div>
+
+  <div id="forgot-pw-msg"><a href="es/reset_password.html">Forgot your password?</a></div>
+</form>          
+          <div id="new-account-msg">Don&#39;t have an account? <a href="es/signup.html">Sign up</a>
+              
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/vendor/modernizr.js'></script>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/vendor/jquery.inview.min.js'></script>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/vendor/owl.carousel.min.js'></script>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/vendor/jquery.matchHeight-min.js'></script>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/vendor/lity.min.js'></script>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/inview-control.js'></script>        
+        <script src="../d2105m540nvnaz.cloudfront.net/assets/home/main-a3e4a5910ce4a8c91df78160f855613057710b1e934ff6b20ab6af28558b210b.js"></script>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/comment-reply.min.js'></script>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/wp-embed.min.js'></script>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/home/js_composer_front.min.js'></script>
+        <script type='text/javascript' src='../d2105m540nvnaz.cloudfront.net/assets/bootstrap.min.js'></script>
+        <script type="text/javascript" src="../d2105m540nvnaz.cloudfront.net/assets/home/jquery_003.js"></script>
+        <script type="text/javascript" src="../d2105m540nvnaz.cloudfront.net/assets/home/jquery_002.js"></script>
+</body>
+
+<!-- Mirrored from www.dibiz.com/es by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2021 04:03:40 GMT -->
+</html>

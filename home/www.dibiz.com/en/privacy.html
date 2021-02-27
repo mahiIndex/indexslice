@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from www.dibiz.com/en/privacy by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2021 04:04:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">    
+            <script>var dataLayer = [];dataLayer.push({'viewType': 'website', 'lang': 'en', 'device': 'desktop'})</script>            
+            		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TVQN7D6');</script>
+		<!-- End Google Tag Manager -->
+
+
+
+                    
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c81e615108","applicationID":"376759191","transactionName":"dVdZRBEJWwhQQk4OV1tdGEARD0EFVkk=","queueTime":3,"applicationTime":187,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"c81e615108",applicationID:"376759191"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+                <title>Dibiz | Digital business card</title>
+
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">        
+                <meta property="og:url" content="https://www.dibiz.com" />
+
+        
+        <!-- <link rel="stylesheet" type="text/css" href="/assets/font-awesome.min"> -->
+        <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" media="all" href="../../d2105m540nvnaz.cloudfront.net/assets/application-6ac148b8b13cdcc07ab16dfeea4423be9f79f8aaaa41b73f4d50ce0066034dbf.css" />
+<link rel="stylesheet" media="all" href="../../d2105m540nvnaz.cloudfront.net/assets/home-bfab9fee0bd88831e62b5e5062b311056daf724e64eeb6b07daed8081d47b33e.css" />        
+        <script src="../../d2105m540nvnaz.cloudfront.net/assets/application-d87ef85a99d62a72fb1db8d28703027344c9b999505ca0fa577f9089b745bc64.js"></script>
+<script src="../../d2105m540nvnaz.cloudfront.net/assets/home-fcffaee41a68c36c7e7497c095b32092014706e4eba19a63c6e70e97ec92bb3b.js"></script>
+
+        
+
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700" rel="stylesheet"> 
+
+        
+
+
+        
+
+        
+
+                   
+        <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="uhVIZHDab+NK7v2zjqbIATjqFxEdo7Pp2MK0IOz7+M7d0XwysyehecVKJfg25lMuXdgLE4fPhKtnVIr6wO1ieQ==" />        
+    </head>
+    
+    <body class="ltr">
+            		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVQN7D6"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+        
+        
+    	<div class="container">    		                
+    		            <link rel='stylesheet' id='noyah_reset-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/reset.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='bootstrap.min-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/bootstrap.min.css' type='text/css' media='all' />
+
+            <link rel='stylesheet' id='noyah_screen-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/screen.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='noyah_color-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/theme/green.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='noyah_main_style-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/noyah/style.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='noyah_style-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/theme.css' type='text/css' media='all' />
+            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<style>
+	body {background: #fff; padding: 20px 0;}
+	body p {color:#1d1d1d;}
+	strong {font-weight: bold;}
+</style>
+<p>&nbsp;</p>
+<h1 class="western" align="center"><span>Privacy Policy</span></h1>
+<p>&nbsp;</p>
+<p align="center"><span><span>Updated on March the 7</span><sup><span>th</span></sup><span>, 2018</span></span></p>
+<p>&nbsp;</p>
+<p><span><span>Thank you for using Dibiz ("</span><span><strong>Dibiz"</strong></span><span>"). This privacy policy tells you how we, Tsupitsal Enterprises LTD ("</span><span><strong>Dibiz</strong></span><span>"), use, collect, receive and store personal information collected from your use of Dibiz (including any services it offers). Please read this privacy policy before using Dibiz or submitting any personal information. By using Dibiz, you are accepting the practices described in this Privacy Policy. This Privacy Policy forms an integral part of the Agreement which you accepted when you used Dibiz. Any capitalized but undefined term in this Privacy Policy shall have the meaning given to it in the Terms of Service. You are encouraged to review the Privacy Policy whenever you use Dibiz to make sure that you understand how any personal information you provide will be used.</span></span></p>
+<p align="justify"><span><span>We do not ourselves host Dibiz &ndash; all hosting is done by third party service providers that we engage. This means that data you provide us or that we collect from you (including any Personal Information, as defined below) &ndash; as further described in this Privacy Policy &ndash; is hosted with such third party service providers on servers that they own or control. Regardless of where such third party service providers are located, their servers may be located anywhere in the world. Your data may even be replicated across multiple servers located in multiple countries. As such, please be aware that you are consenting to your data being transferred to various third party service providers around the world. </span></span></p>
+<p align="justify"><span><span><strong>Introduction. </strong></span><span>This Privacy Policy explains our online information practices and the choices you can make about the way your Personal Information is collected and used in connection with the Services. &ldquo;</span><span><strong>Personal Information</strong></span><span>&rdquo; means any information that may be used, either alone or in combination with other information, to personally identify an individual, including, but not limited to your user name, information required for authentication purposes, your User Content,&nbsp;and any information&nbsp;you provide us to enable purchases.</span></span></p>
+<p align="justify"><span><span><u><strong>Consent and Modification</strong></u></span><br/><span><span><u><strong>You are not legally obligated to provide us Personal Information, and you hereby confirm that providing us Personal Information is at your own free will. By using Dibiz, you consent to the terms of this Privacy Policy and to our collection, processing and sharing of Personal Information for the purposes set forth herein. If you do not agree to provide us with the Personal Information or with this Privacy Policy, please do not access or otherwise use Dibiz</strong></u></span></span><span>. We reserve the right, at our discretion, to change this Privacy Policy at any time. Such change will be effective following posting of the revised Privacy Policy on Dibiz, and your continued use of Dibiz thereafter means that you accept those changes. </span><span><span><u><strong>At all times you may withdraw your consent and ask us to delete such information and we shall do so at a reasonable time following such request</strong></u></span></span><span>.</span></span></p>
+<p align="justify"><span><span>We do receive and/or collect Personal Information from you in the following ways: </span></span></p>
+<p align="justify"><span><span><u>Account</u></span><span><br/> In order to use the Services that we offer via Dibiz, you must create an account (&ldquo;</span><span><strong>Account</strong></span><span>&rdquo;). You may also have to provide additional Personal Information as part of the Account registration process and in connection with your ongoing use of your Account. </span></span></p>
+<p align="justify"><span><span><u>Purchases</u></span><span><br/> We may use the tools, software or services of third-party service providers to process transactions on our behalf, in which case you acknowledge and agree to review and be bound by the terms of use and privacy policy of said third-party service provider. </span></span></p>
+<p align="justify"><span><span><u>Tracking Technologies</u></span><span><br/> We may use tracking technologies in order to for us to provide Dibiz and present you with information that is customized for you. Please note that 3rd party advertisers and partners may use tracking technology which may collect information about you and we do not control their use of these tracking technologies.</span></span></p>
+<p align="justify"><span><span><u>Mobile Device Data</u></span><span><br/> We may collect limited information from your mobile device in order to provide Dibiz. Such information may include your mobile device type, mobile device id, and date and time stamps of Dibiz use. In addition, we may deploy tracking technologies within Dibiz to help us gather aggregate statistics, but we will not use Personal Information for such purposes.</span></span></p>
+<p align="justify"><span><span>If you submit or we collect Personal Information through the Services, then we may use such Personal Information in the following ways, via any applicable communication channels:</span></span></p>
+<p align="justify"><span><span>We may use your Personal Information and other information we collect via the Dibiz in order to identify you, provide and improve Dibiz (including any services we offer via Dibiz), offer you our and our partners' and affiliates products and related services that we believe may be of interest to you and in general, communicate with you.</span> </span></p>
+<p align="justify"><span><span>We may transfer your Personal Information to our local or foreign subsidiaries or affiliated companies for the purpose of storing or processing such information on our behalf. Such information may be transferred to other countries. We require that these parties agree to process such information in compliance with our Privacy Policy. </span></span></p>v
+<p align="justify"><span><span>We may share your Personal Information with our third party service providers, subcontractors, agents and partners, but only to assist us with our business operations and to provide our services to you and other users. Such information may be transferred to other countries. We use commercially reasonable efforts to only engage or interact with third party service providers and partners that post a privacy policy governing their processing of Personal Information.</span></span></p>
+<p align="justify"><a name="_GoBack"></a> <span><span>We may disclose your Personal Information or any information you submitted via Dibiz if we have a good faith belief that disclosure of such information is helpful or reasonably necessary to: (i) comply with any applicable law, regulation, legal process or governmental request; (ii) enforce our Terms, including investigations of potential violations thereof; (iii) detect, prevent, or otherwise address fraud or security issues; or (iv) protect against harm to the rights, property or safety of TSUPITSAL ENTERPRISES LTD, our users, yourself or the public.</span></span></p>
+<p align="justify"><span><span>We may also share Personal Information and other information with governmental agencies or other companies assisting us in fraud prevention or investigation.</span></span></p>
+<p align="justify"><span><span>We may use Anonymous Information (as defined below) or disclose it to third party service providers in order to improve Dibiz and enhance your experience with Dibiz. We may also disclose Anonymous Information (with or without compensation) to third parties, including advertisers and partners. &ldquo;Anonymous Information&rdquo; means information which does not enable identification of an individual user, such as aggregated information about the use of Dibiz.</span></span></p>
+<p align="justify"><span><span>Dibiz is not structured to attract children under the age of 18 years. Accordingly, we do not intend to collect Personal Information from anyone we know to be under 18 years. If we learn that we have collected Personal Information from a child under 18 years, we will delete that information as quickly as possible. If you believe that we might have any such information, please contact us at <a href="mailto:hello@dibiz.com" target="_blank">hello@dibiz.com</a></span></span></p>
+<p align="justify"><span><span>In the event that we are acquired by or merged with a third party entity, or in the event of bankruptcy or a comparable event, we reserve the right to transfer or assign Personal Information in connection with the foregoing events.</span></span></p>
+<p align="justify"><span><span>We follow generally accepted industry standards, including the use of appropriate administrative, physical and technical safeguards, to protect the Personal Information submitted to us. However, no method of transmission over the Internet, or method of electronic storage, is 100% secure. Therefore, we cannot guarantee its absolute security or confidentiality. If you have any questions about this&nbsp;Privacy Policy,&nbsp;or our information practices, please contact us by email&nbsp;to:&nbsp; <a href="mailto:hello@dibiz.com" target="_blank">hello@dibiz.com</a></span></span></p>
+<p>&nbsp;</p>
+    	</div>	
+        
+        
+    </body>
+
+
+<!-- Mirrored from www.dibiz.com/en/privacy by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2021 04:04:16 GMT -->
+</html>
+
+
+<!-- This is the modal for cards with fax and in emerald design -->

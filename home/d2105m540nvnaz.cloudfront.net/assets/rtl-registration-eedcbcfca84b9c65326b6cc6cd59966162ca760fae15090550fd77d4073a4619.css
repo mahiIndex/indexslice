@@ -1,0 +1,28 @@
+body {direction: ltr;}
+.container, #app-wrap {direction: rtl;}
+.mdl-stepper--horizontal {margin-left: 0;margin-right: -26px;}
+.gray-card#fb-card {padding-left: 20px;padding-right: 72px;}
+.gray-card#fb-card:before {left: inherit;right: 24px;top: 38px;}
+.mdl-step__label-indicator {margin-right: 0;margin-left: 12px;}
+.mdl-stepper--horizontal > .mdl-step:not(:last-child):after {margin-right: -12px;margin-left: 0;}
+#fb-card.gray-card #fb-ico img {padding-right: 0;padding-left: 14px;}
+.mdl-textfield__input, .mdl-textfield__label {text-align: right;}
+.mdl-checkbox__ripple-container {left: inherit;right: -10px;}
+.mdl-checkbox__box-outline {right: 0;left: inherit;}
+.mdl-checkbox.is-upgraded {padding-left: 0;padding-right: 24px;}
+.getmdl-select .mdl-icon-toggle__label {float: left;}
+
+@media (max-width: 500px) {
+	#fb-card.gray-card {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#fb-card.gray-card:before {
+		position: relative;
+		top: 16px;
+		right: 50%;
+		margin-right: -14px;
+	}
+
+}

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from www.dibiz.com/he/terms by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2021 04:04:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">    
+            <script>var dataLayer = [];dataLayer.push({'viewType': 'website', 'lang': 'he', 'device': 'desktop'})</script>            
+            		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TVQN7D6');</script>
+		<!-- End Google Tag Manager -->
+
+
+
+                    
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c81e615108","applicationID":"376759191","transactionName":"dVdZRBEJWwhQQk4OV1tdGEQGFFoX","queueTime":4,"applicationTime":54,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"c81e615108",applicationID:"376759191"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+                <title>Dibiz | Digital business card</title>
+
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">        
+                <meta property="og:url" content="https://www.dibiz.com" />
+
+        
+        <!-- <link rel="stylesheet" type="text/css" href="/assets/font-awesome.min"> -->
+        <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" media="all" href="../../d2105m540nvnaz.cloudfront.net/assets/application-6ac148b8b13cdcc07ab16dfeea4423be9f79f8aaaa41b73f4d50ce0066034dbf.css" />
+<link rel="stylesheet" media="all" href="../../d2105m540nvnaz.cloudfront.net/assets/home-bfab9fee0bd88831e62b5e5062b311056daf724e64eeb6b07daed8081d47b33e.css" />        
+        <script src="../../d2105m540nvnaz.cloudfront.net/assets/application-d87ef85a99d62a72fb1db8d28703027344c9b999505ca0fa577f9089b745bc64.js"></script>
+<script src="../../d2105m540nvnaz.cloudfront.net/assets/home-fcffaee41a68c36c7e7497c095b32092014706e4eba19a63c6e70e97ec92bb3b.js"></script>
+
+        
+            <link rel="stylesheet" media="screen" href="../../d2105m540nvnaz.cloudfront.net/assets/rtl-registration-eedcbcfca84b9c65326b6cc6cd59966162ca760fae15090550fd77d4073a4619.css" />
+
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700" rel="stylesheet"> 
+
+        
+
+
+        
+
+        
+
+                   
+        <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="f14sEyVAM53OEzFXUObryLTU5Z4Hrd1v24uyIodj+WYYmhhF5r39B0G36RzopnDn0eb5nJ3B6i1kHYz4q3Vj0Q==" />        
+    </head>
+    
+    <body class="rtl">
+            		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVQN7D6"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+        
+        
+    	<div class="container">    		                
+    		            <link rel='stylesheet' id='noyah_reset-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/reset.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='bootstrap.min-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/bootstrap.min.css' type='text/css' media='all' />
+
+            <link rel='stylesheet' id='noyah_screen-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/screen.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='noyah_color-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/theme/green.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='noyah_main_style-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/noyah/style.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='noyah_style-css'  href='../../d2105m540nvnaz.cloudfront.net/assets/home/theme.css' type='text/css' media='all' />
+            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<style>
+	body {background: #fff; padding: 20px 0;}
+	body p {color:#1d1d1d;}
+	strong {font-weight: bold;}
+</style>
+
+<style>
+body * {
+direction: rtl;
+text-align: right;
+}
+#terms-wrapper {padding:0 4%;font-family: 'arial', sans-serif;}
+</style>
+
+<div id="terms-wrapper">
+<p dir="rtl" align="center">
+    <h2>תקנון שימוש - DIBIZ</h2>
+</p>
+
+<ol>
+    <li>
+        <p dir="rtl" align="right">
+            ברוך הבא לאתר dibiz ("<strong>האתר</strong>"), המאפשר לך ליצור
+            כרטיס ביקור דיגיטלי ולקצר את הדרך ללקוח הבא שלך – הצטרף למהפכה!!
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            הוראות תקנון זה יחולו על כל שימוש וכל רכישה של שירות שיעשו על ידי
+גולש אשר נרשם באתר וקיבל שם משתמש וסיסמא הייחודים לו (להלן "            <strong>המשתמש</strong>"/"<strong>הרוכש</strong>") וכל התקשרות בין
+            הרוכש ובין האתר (ו/או כל ישות משפטית אחרת אשר תפעיל את האתר
+            מטעמה) ("<strong>מפעילת האתר</strong>" או "<strong>החברה</strong>")
+            תהווה את הבסיס המשפטי לכל דיון בין הרוכש למפעילת האתר.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            האמור בתקנון זה יחול גם על תאגיד הרוכש שירות כרטיס ביקורי דיגיטלי
+            עסקי עבור עובדיו ו/או הפועלים בשמו.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            השימוש והגלישה באתר מהווים את הסכמתך לאמור בתקנון. אם אינך מסכים
+            לחלק כלשהו מהתקנון – אין להשתמש באתר או בכל חלק שלו.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            האתר כולל מידע כללי וספציפי אודות השירותים המוצעים בו ומאפשר לגולש
+            לרכוש אותם בהתאם למחיר הנקוב באתר.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            האתר והפלטפורמות השיווקיות הנספחות לו, משמשים להקמה ושיווק כרטיס
+            ביקור דיגיטלי. הרוכש יכול לשתף את כרטיס הביקור הדיגיטלי עם כל מי
+            שירצה.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    לכרטיס הדיגיטלי הנמכר באתר מספר גרסאות, בעלות תוכן ו/או עיצוב שונה ו/או
+    אפשרויות טכנולוגיות שונות – הכל לפי בחירת החברה או המשתמש, חלקן מוצעות
+    בחינם וחלקן בתשלום ובאחריות המשתמש לבחור את האופציה הטובה עבורו.
+</p>
+<ol start="7">
+    <li>
+        <p dir="rtl" align="right">
+            השימוש בלשון זכר או בלשון רבים הינם מטעמי נוחות בלבד ותקנון זה
+            מתייחס כמובן, גם לנשים.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר עושה את מירב המאמצים ומשקיעה משאבים ניכרים בהפעלת האתר.
+            אם נתקלתם בבעיה כלשהי, בטעות או בשגיאה, או אם יש לכם שאלה או הערה,
+            אנא צרו קשר עם מפעילת האתר בכתובת הדוא"ל:
+            <a
+                href="mailto:hello@dibiz.com"
+            >hello@dibiz.com</a>.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר רשאית לשנות תנאי תקנון זה מעת לעת לפי שיקול דעתה
+            הבלעדי. כל שינוי מהותי בתנאי תקנון זה יפורסם ויחייב את הגולש מרגע
+            פרסומו. מבלי לגרוע מהאמור, מומלץ לגולשים לעיין באופן תקופתי בהוראות
+            התקנון.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            במקרה של סתירה בין הוראות תקנון זה לבין הוראות חוק הגנת הצרכן ו/או
+            כל דין אחר, יגבר האמור בתקנון ובמקרה של סתירה בין הוראות התקנון
+            לבין עצמן, תגבר זו המיטיבה ביותר עם החברה. אם דין כלשהו אינו מאפשר
+            התניה על הוראותיו, יקראו הוראות תקנון זה כך שיעלו בקנה אחד עם
+            הוראות הדין ובמידת האפשר לפי הכוונה המקורית של הוראות התקנון.
+            מובהר, שהכוונה המקורית של הוראות תקנון זה, היא לא להעניק לגולש
+            זכויות מעבר לזכויות הבסיס שעליהן לא ניתן להתנות (ככל שקיימות)
+            והמוענקות במפורש בדין.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            כל המחירים המוצגים באתר נקובים בשקלים חדשים וכוללים מע"מ במידה וחל
+            תשלום מע"מ על העסקה לפי כל דין, אלא אם צוין מפורשות אחרת.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר רשאית לעדכן את המחירים באתר מעת לעת ובלא צורך בהודעה
+            מוקדמת. המחיר התקף ביחס להזמנה שבוצעה הוא המחיר שהתפרסם בעת השלמת
+            את תהליך ההזמנה (הכולל את מסירת פרטי כרטיס אשראי). אם עודכנו
+            המחירים לפני שהושלם תהליך ההזמנה יחויב הרוכש לפי המחירים המעודכנים.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            כל הדוגמאות של כרטיסי ביקור דיגיטליים באתר הן לצרכי הדגמה בלבד
+            והחברה אינה מתחייבת כי כרטיס הביקור של הרוכש יעוצב באותו האופן
+            שנראה בדוגמאות.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר רשאית להציע באתר מבצעים, הטבות והנחות אך רשאית בכל עת
+            להפסיקם, להחליפם או לשנותם, בלא צורך לתת כל הודעה מוקדמת על כך.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            בעת עדכון סל הקניות, מפעילת האתר שומרת לעצמה את הזכות להעביר תזכורת
+            לרוכש אודות סל קניות 'נטוש', באמצעות שליחת מייל לכתובת שהוזנה על
+            ידו.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            בעת הרשמה לאתר, מוצעת אפשרות הרשמה לדיוורים הרשמיים של האתר. באם
+            המשתמש מעוניין להסיר את עצמו מן הדיוור לאחר שגולש, הוא יכול לעשות
+            זאת דרך הלינק בתחתית הדיוור שהתקבל.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            הרישום לאתר מוגבל ביצירת חשבון יחיד לכל משתמש. מפעילת האתר שומרת
+            לעצמה את הזכות להסיר חשבונות כפולים.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    <u>הצטרפות לשירות והתשלום עבור השירותים</u>
+    :
+</p>
+<ol start="18">
+    <li>
+        <p dir="rtl" align="right">
+            כל משתמש פוטנציאלי נדרש תחילה להירשם לאתר באמצעות הזנה של שם משתמש
+            וסיסמא, שישמשו לצורך הזדהות בעת כניסה למערכת. על הגולש חלה החובה
+            לשמור את פרטי ההזדהות בסודיות ולא לאפשר לאחר זולתו לעשות בהם שימוש.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    בשלבים הבאים יידרש כל משתמש להזין את כל פרטי ההתקשרות איתו, את פרטיו
+    האישיים וכל צרף מידע וחומר שיווקי או אחר והכל לפי אפשרויות ו/או דרישות
+    השירות הנבחר.
+</p>
+<ol start="19">
+    <li>
+        <p dir="rtl" align="right">
+            המשתמש מתחייב כי כל מידע שימסור לצורך רישום באתר ו/או כנדרש בכל
+            מקום באתר, לרבות לצורך רישומו כמשתמש, ובכלל זה נתוני כרטיס אשראי
+            וכל מידע אחר שיידרש ממנו, ככל שיידרש, יהיה נכון, מדויק, מלא ואינו
+            מפר זכויות צדדים שלישיים והדין. אם בעת ביצוע ההזמנה יימסרו פרטים
+            שגויים, החברה לא תוכל להבטיח שהשירות או המוצר אותו הזמין יסופק לו.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            עם ביצוע ההזמנה ע״י המשתמש תתבצע בדיקה של פרטי כרטיס האשראי, ועם
+            אישור ההזמנה ע״י חברות האשראי, תישלח הודעה על כך ללקוח שהזמנה אכן
+            אושרה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            פרטי ההזמנה כפי שהזין הלקוח בטופס ההזמנה ורישום העסקה במחשבי מפעילת
+            האתר יהוו ראייה חלוטה וסופית לנכונות דרך הפעולה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            במקרה בו לא אושרה העסקה ע״י חברת האשראי, יקבל המשתמש הודעה מתאימה
+            על כך והוא יידרש למסור אמצעי תשלום אחר.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            לאחר שהוזנו פרטי התשלום בדף התשלום, יישלח אישור באמצעות הדואר
+            האלקטרוני על קליטת פרטי ההזמנה. אישור זה אינו מחייב את מפעילת האתר
+            לספק את השירות ו/או המוצר והוא רק מעיד שפרטי ההזמנה נקלטו אצלה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            אם יתברר שכרטיס האשראי של המשתמש אינו תקף, או שחברת כרטיסי האשראי
+            איננה מכבדת את העסקה, או שחברת PayPal (או כל שירות ארנק אלקטרוני
+            זמין אחר) אינה מכבדת את החיוב מפעילת האתר תיצור קשר עם המשתמש לשם
+            השלמת העסקה או ביטולה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            בתשלום באמצעות חשבון PayPal יתבקש המשתמש להזין את פרטי חשבונו הקיים
+            באתר PayPal, או יוכל לבחור לפתוח חשבון PayPal חדש. אם החליט המשתמש
+            לשלם באמצעות חשבון PayPal, מפעילת האתר תוכל לגבות את התשלום עבור
+            המוצר / השירות שנרכש רק לאחר קבלת אישור מPayPal השימוש וקבלת האישור
+            מPayPal כפוף לתנאי השימוש ומדיניות הפרטיות של PayPal ולא של האתר.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            סליקת כרטיסי האשראי של המשתמש מתבצעת באמצעות חברת סליקה הקשורה
+            בהסכם מחייב מול מפעילת האתר ועל כן מפעילת האתר אינה שומרת את פרטי
+            אמצעי התשלום של המשתמש ואינה אחראית לכל מעשה ו/או מחדל של חברת
+            הסליקה ביחס לכך.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            הפרטים האישיים שימסרו בעת הרכישה על ידי המשתמש, יישמרו אצל מפעילת
+            האתר.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    <u>התחייבויות והצהרות המשתמש כלפי מפעילת האתר </u>
+</p>
+<ol start="28">
+    <li>
+        <p dir="rtl" align="right">
+            מבלי לגרוע מהצהרות מהתחייבויות הגולש בכל מקום אחר בתקנון זה, המשתמש
+            מצהיר, מאשר ומתחייב כי:
+        </p>
+    </li>
+</ol>
+<ul>
+    <li>
+        <p dir="rtl" align="right">
+            הוא רשאי להתקשר עם מפעילת האתר לפי הוראות תקנון זה ולפי כל דין.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            יציית לתקנון במלואו וכן להוראות כל דין במסגרת השימוש באתר.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            ישתמש בשירותי האתר למטרות חוקיות בלבד.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            כל מידע שימסור לצורך רישום באתר ו/או כנדרש בכל מקום באתר ובכלל זה
+            נתוני כרטיס אשראי וכל מידע אחר שיידרש ממנו, ככל שיידרש, יהיה נכון,
+            מדויק, מלא, תואם את המציאות ואינו מטעה. המשתמש יעדכן את מפעילת האתר
+            בכל מקרה של שינוי בכל מידע רלבנטי אחר על ואודות המשתמש.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            עצם הרישום כמשתמש מהווה הסכמה להיכלל במאגר של מפעילת האתר. המאגר
+            ישמש את מפעילת האתר בין היתר למשלוח הודעות, עדכונים ודברי פרסומת
+            למשתמש, בדואר אלקטרוני או במסרון ככל שהמשתמש אישר את קבלתם. מחיקת
+            פרטים מהמאגר תעשה לבקשת משתמש שיפנה למפעילת האתר לפי הפרטים שבתחתית
+            תקנון זה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר לא תשא באחריות לכל נזק ישיר ו/או עקיף, כספי או אחר,
+            שיגרם למשתמש ו/או לצדדים ג' כתוצאה משימוש באתר ו/או הסתמכות על
+            התוכן המופיע בו.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            הוא מסכים שמפעילת האתר תהא רשאית למסור את פרטיו לצדדים שלישיים אם
+            הדבר מתחייב על פי כל דין ו/או אם מפעילת האתר תעמוד בפני איום כי
+            ינקטו נגדה צעדים משפטיים (פליליים או אזרחיים) בגין מעשי ו/או מחדלי
+            הגולש.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            לא יעתיק ו/או ישכפל את האתר ו/או את התכנים שבו.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            הוא פוטר את מפעילת האתר מכל אחריות בקשר לתכני האתר, לרבות בכל הקשור
+            למוצרים ולשימוש בהם.
+        </p>
+    </li>
+</ul>
+<ol start="29">
+    <li>
+        <p dir="rtl" align="right">
+            למפעילת האתר הזכות שלא לאשר התקשרות עם משתמש מכל סיבה שהיא, ובכלל
+            זה שלא להתיר לגולש להירשם כמשתמש וכן שלא להתיר לגולש לעשות שימוש או
+            להמשיך ולהשתמש באתר, כולו או חלקו, ו/או לבטל ו/או לחסום כל תוכן של
+            גולש והכל באופן מיידי בכל מקרה של שימוש לרעה באתר ו/או אי עמידה
+            בתנאים הקבועים בתקנון זה, וזאת מבלי לגרוע מכל זכות העומדת למפעילת
+            האתר על פי דין ו/או הסכם. למפעילת האתר יהיה שיקול דעת בלעדי, סופי
+            ומוחלט לקבוע מה יהווה "שימוש לרעה", האם ומתי שימוש באתר עולה לכדי
+            הפרת האמור בתקנון זה ו/או בכל הסכם ו/או דין.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    <u>אחריות מפעילת האתר ומגבלותיה</u>
+</p>
+<ol start="30">
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר תהא רשאית, לפי שיקול דעתה הבלעדי, בכל עת וללא הודעה
+            מוקדמת, להתאים ו/או להשעות ו/או להפסיק ו/או לשנות ו/או להגביל את
+            האתר, תכניו ו/או שירותיו – כולם או חלקם - לרבות הרשאות גישה, זמינות
+            פעילויות ושירותים, תכנים שונים, שעות פעילות וכדומה. בכל מקרה,
+            מפעילת האתר לא תשא באחריות לנזקים כלשהם כתוצאה מהאמור, אף אם צפתה
+            או היה ביכולתה לצפות נזקים אלה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            השירותים המוצעים באתר ניתנים כפי שהם .(AS IS) מפעילת האתר אינה
+            מתחייבת ואף לא תהא אחראית כלפי הגולשים בכל עניין הנובע משימוש באתר
+            ו/או הנוגע לתמהיל ו/או איכות המוצרים ו/או השירותים המוצעים בו ו/או
+            לתוכן באתר ו/או לזמינות השירותים שבו ו/או להתאמת האתר ו/או תוכנו
+            לציפיות הגולשים.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר ו/או מי מטעמה לא יהיו אחראים ולא יישאו בכל נזק ישיר,
+            עקיף, תוצאתי או מיוחד, שיגרם לגולש ו/או לצד שלישי, כתוצאה משימוש
+            ו/או רכישה של מוצרים / שירותים באמצעות האתר, כמו גם הסתמכות על
+            התכנים שבו - תהא עילת התביעה אשר תהא - לרבות הפסד הכנסה ו/או מניעת
+            רווח שיגרמו מכל סיבה שהיא.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            כאמור, דוגמאות כרטיסי הביקור באתר נועדו להמחשה בלבד וייתכנו הבדלים
+            בין הדוגמאות המוצגות באתר, חלקן או כולן, לבין המוצר / שירות הנמכר
+            בפועל.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            המידע (לרבות התכנים) המופיע באתר והמערכת ניתנים בכל עת אך ורק כפי
+            שהם מופיעים באתר ועל פי זמינותם. מפעילת האתר אינה מתחייבת באופן
+            מפורש או משתמע לגבי טיב פעולתם, התאמתם לצרכי הגולש, סחירותם, הבעלות
+            בהם או בכל חלק מהם. כל שימוש באתר ובמערכת או הסתמכות עליהם תיעשה,
+            על אחריותם הבלעדית והמלאה של הגולשים. מפעילת האתר, עובדיה, נציגיה,
+            מנהליה, סוכניה, יורשי הבעלים או מוטבים אחרים שלהם, לא יהיו אחראים
+            בשום מקרה, לנזק משום סוג שהוא שיווצר למשתמש או לצד שלישי כל שהוא,
+            בקשר עם שימוש, אי-שימוש או הסתמכות על האתר או על המידע, או על
+            המערכת או חוסר יכולת לעשות שימוש באתר או במערכת, או בקשר עם כל
+            אובדן או השמדת נתונים, מחיקה, שיבוש, שגיאה, השמטה, כשל, הפרעה, פגם,
+            איחור, עיכוב, נזק חומרה, נזק תוכנה, וירוס, נתק בתקשורת, גניבה,
+            פגיעה בפרטיות, גישה בלתי חוקית למידע, שינוי נתונים, שימוש לרעה
+            במידע, או כל התנהגות פוגעת או בלתי חוקית של צד שלישי, או בקשר למעשה
+            או מחדל שמקורם בצד שלישי כלשהו, מוצרים, שירותים או מידע אשר סיפק צד
+            שלישי כלשהו, או בעל אתר אינטרנט אחר שאליו קיים קישור מן המערכת או
+            מכרטיס הביקור, ולכל נזק עקיף, משני, מיוחד או תוצאתי, בכל סכום ובקשר
+            עם כל עניין.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מאחר והמדובר בביצוע פעולות בסביבה מקוונת אין באפשרותה של מפעילת
+            האתר להבטיח חסינות מוחלטת מפני חדירות למחשביה או חשיפת המידע האגור
+            בידי מבצעי פעולות בלתי חוקיות, אך מפעילת האתר מתחייבת לעשות כמיטב
+            יכולתה באמצעים העומדים לרשותה בכדי לשמור על סודיות הפרטים שנמסרו
+            במעמד ההצטרפות לשירות. אם בכל זאת יעלה בידי גורם כלשהו לחדור למידע
+            אשר מאובטח ושמור בידיה ו/או להשתמש בו לרעה למרות אמצעי האבטחה שהיא
+            נוקטת, לא תוכל להעלות ו/או לפנות בכל טענה, תביעה או דרישה כלפי
+            מפעילת האתר. המשתמש הינו האחראי הבלעדי לכל המידע השמור על ידיו בתוך
+            המערכת. המשתמש מתחייב להזין במערכת האתר אך ורק מידע ששייך לו או
+            שקיבל זכות שימוש בו במסגרת כרטיס הביקור הדיגיטלי. המשתמש נותן בזאת
+            למפעילת האתר זכות שימוש במידע שיכניס למערכת ובכל זכויות קניין רוחני
+            או פרטיות או כל זכות אחרת, לצורך מתן השירות על ידה. המשתמש מתחייב
+            לא לכלול מידע רגיש, אישי או מפר הגנת פרטיות של צדדים שלישיים, מידע
+            סודי על פי חוזה או על פי דין, מידע פורנוגרפי או נוגד תקנת הציבור או
+            שעלול לפגוע ברגשותיו, מידע המפר זכויות קניין רוחני של אחרים, לרבות
+            פטנטים, תכנה, זכויות יוצרים, סימני מסחר וכיו"ב, על פי כל דין החל
+            עליו, וישפה את מפעילת האתר בגין כל נזק שייגרם לה בגין מידע כאמור
+            שיועלה למערכת. במידה ומפעילת האתר תראה לנכון ועל פי שיקול דעתי
+            הבלעדי, היא תהיה רשאית למחוק מידע כאמור מן המערכת או אף להגביל את
+            שימוש המשתמש בה. ברור למשתמש כי מפעילת האתר ומערכות המידע של החברה
+            אינם מתפקדים כארכיב או כאמצעי אחסון לכל מידע שלך או של אחרים אשר
+            יוזן למערכת. המשתמש מתחייב לגבות את כל המידע שלו באמצעים אחרים
+            ומפעילת האתר לא תהא אחראית כלפיו או כלפי כל צד שלישי בגין כל אבדן
+            מידע מכל סוג.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            באישור הסכם תנאי השימוש, הינכם מאשרי כי קראתם ואישרתם גם את <a onclick="window.open(this.href,&#39;mywin1&#39;,&#39;left=100,top=100,width=600,height=780,toolbar=0,resizable=0&#39;);return false;" href="privacy.html">מדיניות הפרטיות</a> של האתר.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            בכל מקרה לא תישא מפעילת האתר בכל נזק שאינו ישיר ו/או נזק תוצאתי
+            ואחריותה לכל נזק שייגרם, אם ייגרם, כתוצאה משימוש של המשתמש בשירות
+            לא יעלה על ערך השירות / מוצר הנרכש שגרם לנזק.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר לא תהא אחראית לתקלות ו/או עיכובים כתוצאה מאירועים שאינם
+            בשליטתה, כדוגמת תקלות, עיכובים, שביתות, אסונות טבע, תקלות במערכת
+            המחשוב או במערכות הטלפונים שיפגעו בהשלמת תהליך הרכישה או תקלות
+            בשירות הדואר האלקטרוני ו/או סליקת כרטיס האשראי. מפעילת האתר אינה
+            מתחייבת שהשירות המוצע באתר יינתן באופן סדיר וללא כל הפרעות ו/או
+            הפסקות לרבות תקלות, נזקים, קלקולים, בעיות וכשלי תקשורת במחשביה ו/או
+            אצל מי מספקיה והיא לא תישא באחריות לכל נזק ישיר ו/או עקיף (לרבות
+            עוגמת נפש) שייגרמו כתוצאה מכך למשתמש ו/או לכל אדם אחר.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    <u>זכויות הקניין רוחני של מפעילת האתר ובעלותה בנוגע לתכנים באתר</u>
+</p>
+<ol start="39">
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר מקפידה על שמירת זכויות היוצרים ושאר זכויות הקניין
+            הרוחני ברשת האינטרנט. כל גולש באתר נדרש בזאת להקפיד ולשמור על
+            הזכויות האמורות, שכן שמירה עליהן היא תנאי לשימוש באתר.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר תהא רשאית לבצע כל פעולה ביחס לאתר לרבות למכור את האתר
+            ו/או למכור שטחי פרסום באתר ו/או להציב בו קישורים ממומנים.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            תמונות ו/או כל מידע ו/או תצוגה המופיעים באתר, לרבות גרפיקה, עיצוב,
+            הצגה מילולית, סימני מסחר, סימני לוגו וכן עריכתם והצגתם של אלה, הנם
+            בבעלות בלעדית של מפעילת האתר ו/או מי מטעמה או שהיא קיבלה זכויות
+            שימוש בהם מצדדים שלישיים. אין להעתיק לשכפל, להפיץ, לפרסם או להשתמש
+            בכל דרך אחרת את התכנים המופיעים באתר, אלא אם כן ניתנה לכך הסכמה
+            מפורשת ממפעילת האתר בכתב ומראש.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            אין להעתיק, לשכפל, להפיץ, למכור, לשווק ולתרגם מידע ותוכן כלשהו
+            מהאתר, לרבות סימני מסחר, תמונות וטקסטים, קטעי אודיו ווידאו, עיצוב
+            ותמונות המוצרים וכיוצא בזאת, בלא קבלת רשותה של מפעילת האתר מראש
+            ובכתב.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            תמונות ו/או סימני מסחר ו/או לוגו ו/או קניין רוחני של ישויות משפטיות
+            שכרטיס הביקור הדיגיטלי מפנה לאתר שלהן או לחשבון שלך באתר שלהן,
+            לדוגמא קישור לאתר facebook, instgram, waze וכדומה ("החברות
+            המקושרות"), הינם קניינם של החברות המקושרות בלבד ועיצובם ודרך השימוש
+            בהם מוגבל וכפוף לתנאים המשפטיים באתר של כל חברה מקושרת. בעת השימוש
+            בסימני מסחר אלו המשתמש מתחייב לעמוד בדרישות כל אחת מן החברות.
+            המשתמש מתחייב לשפות את מפעילת האתר בגין כל נזק שייגרם לה בשל הפרה
+            שלו את התנאים המשפטיים של איזה מהחברות המקושרות בגין שימוש מפר
+            בקניין הרוחני שלהן.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            ניתן למשתמש רישיון אישי מוגבל בלתי ניתן להעברה ולא בלעדי, לגשת,
+            לראות ולעשות שימוש באתר החברה במידע בו ובמערכת בניית כרטיס ביקור
+            דיגיטלי, לשימושו ולמטרות המפורטות בתקנון זה. המשתמש רשאי להוריד
+            לשמור או להדפיס עותקים בודדים של התוכן באתר לשימושו בלבד. עצם ביצוע
+            התשלום בגין השירות המוצע באתר אינו מקנה למשתמש ו/או מי מטעמו להפוך
+            לבעלים ו/או אחראים על המערכת או קוד המקור. אסור להשתמש בתכניות או
+            רובוטים או חומרה כדי לאסוף חומר מן האתר, להעתיק או לשמור חומר
+            כאמור. המשתמש אינו מורשה להציג תכנים מהאתר בכל דרך שהיא - ובכלל זה
+            באמצעות כל תוכנה, מכשיר, אביזר או פרוטוקול תקשורת - המשנים את
+            עיצובם באתר או מחסירים מהם תכנים כלשהם ובפרט פרסומות ותכנים
+            מסחריים. המשתמש מצהיר ומתחייב שלא לאסוף מידע או כל חלק ממנו מן האתר
+            לרבות בכל אמצעי טכנולוגי/ ממוחשב/ אלקטרוני או אחר, ובכלל זה באמצעות
+            שימוש בתכנות אוטומטיות או רובוטים, עכבישים scrapers ודומיהם. המשתמש
+            מאשר כי ידוע לו שחדירה לאתר או למערכות המחשב של מפעיל האתר מהווה
+            עבירה פלילית, והוא מתחייב שלא לבצע ו/או לסייע לביצוע כל פעולת חדירה
+            ו/או ניסיון חדירה לאתר או למערכות המחשב של מפעיל האתר, לרבות חיפוש
+            אחר פרצות במערכות אלו ופיצוח מערכות ההצפנה ו/או האבטחה המגנות על
+            מערכות אלו. המשתמש מתחייב לעשות שימוש באתר למטרות חוקיות בלבד.
+            המשתמש מתחייב להימנע מכל פעולה אשר יש בה מניעה, הגבלה או הרתעה של
+            אחר משימוש חופשי באתר, לרבות הכבדה על מערכות המפעילות את האתר.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            אין להפעיל או לאפשר להפעיל כל יישום מחשב או כל אמצעי אחר, לרבות
+            תוכנות מסוג Crawlers, Robots וכדומה, לשם חיפוש, סריקה, העתקה או
+            אחזור אוטומטי של תכנים מתוך האתר. בכלל זה, אין ליצור ואין להשתמש
+            באמצעים כאמור לשם יצירת לקט, אוסף או מאגר שיכילו תכנים מהאתר.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            אין להציג תכנים מהאתר בתוך מסגרת (i- Frame), גלויה או סמויה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            אין להציג תכנים מהאתר בכל דרך שהיא – ובכלל זה באמצעות כל תוכנה,
+            מכשיר, אביזר או פרוטוקול תקשורת - המשנים את עיצובם באתר או מחסירים
+            מהם תכנים כלשהם ובפרט פרסומות ותכנים מסחריים.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    <u>מי יכול להשתמש בשירותי האתר</u>
+    :
+</p>
+<ol start="48">
+    <li>
+        <p dir="rtl" align="right">
+            כל משתמש רשאי להשתמש באתר על מנת להצטרף לשירותים המוצעים בו, בכפוף
+            למילוי כל התנאים המפורטים להלן:
+        </p>
+    </li>
+</ol>
+<ul>
+    <li>
+        <p dir="rtl" align="right">
+            המשתמש הנו כשיר לבצע פעולות משפטיות מחייבות. במידה והינו קטין (מתחת
+            לגיל 18) או שאינו זכאי לבצע פעולות משפטיות ללא אישור אפוטרופוס,
+            יראו את שימושו של המשתמש באתר כאילו קיבל את אישורו המפורש של
+            האפוטרופוס לכך.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            המשתמש מתחייב להשתמש בשירות בהתאם לחוקי מדינת ישראל לרבות בעניין
+            הפצת מסרונים ו/או הודעות למי שלא אישר לקבל הודעות.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            המשתמש הינו בעל תעודת זהות ישראלית תקפה או תאגיד המאוגד והרשום כדין
+            בישראל.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            המשתמש הוא בעל תא דואר אלקטרוני ובעל כתובת פיזית בישראל.
+        </p>
+    </li>
+</ul>
+<p dir="rtl" align="right">
+    <u>ביטול</u>
+    :
+</p>
+<ol start="49">
+    <li>
+        <p dir="rtl" align="right">
+            המשתמש יוכל להפסיק בכל עת את קבלת השירותים.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            למען הסר ספק, התשלום בגין השירות הינו תקופתי (חודשי/שנתי), במידה
+            והמשתמש יבחר להפסיק את השירות במהלך התקופה, לא יוחזר הסכום היחסי
+            בגין התשלום באותו החודש והכל בכפוף להוראות הדין.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    <u>תמיכה טכנית</u>
+    :
+</p>
+<ol start="51">
+    <li>
+        <p dir="rtl" align="right">
+            השירות והשימוש באתר אינו כולל תמיכה טכנית, בכל מקרה בו תינתן תמיכה
+            טכנית תהא רשאית מפעילת האתר להתנות מתן תמיכה טכנית בתשלום.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    <u>תנאים נוספים ומשלימים</u>
+    :
+</p>
+<ol start="52">
+    <li>
+        <p dir="rtl" align="right">
+            כרטיס הביקור הדיגיטלי הנבנה באמצעות מערכת האתר מאוחסן בשרתי מפעילת
+            האתר ואינו ניתן להעברה ואחסון בשרתים ו/או מקומות אחרים.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר ו/או/ מי מטעמה לא יהיו אחראים ולא ישאו בכל נזק ישיר
+            ו/או/ עקיף כלפי משתמשים ו/או צדדי ג' ו/או מכשירי קצה באשר לתכנים
+            אשר יוזנו ו/או יופצו על ידי המשתמש במערכת, לרבות אמינותם, השפעתם,
+            דיוקם ומהימנותם.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר תהא רשאית להפסיק את מתן השירותים למשתמש וזאת במידה
+            והופסק ו/או לא הוסדר נושא התשלום במלואו.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            מפעילת האתר שומרת לעצמה את הזכות לפנות אל המשתמש בדואר אלקטרוני,
+            בכתב או בע''פ בכל מידע בדבר מבצעים ועדכונים, אלא אם ציין במפורש
+            שאינו מעוניין בכך. המשתמש מסכים ומתחייב לשפות ולפצות את החברה,
+            עובדיה, נציגיה, מנהליה, סוכניה, יורשי הבעלים או מוטבים אחרים שלו,
+            צוות הכותבים או העורכים של המידע ו/או כל חלק ממנו והיועצים המשתתפים
+            בעריכתו, מיד עם דרישתם הראשונה, כנגד כל נזק הוצאה או הפסד, לרבות
+            שכר טרחת עורכי דין והוצאות משפטיות, ככל שיהיו כאלה שייגרמו להם או
+            למי מטעמם בגין כל טענה, תביעה או דרישה, הנובעות באופן ישיר או עקיף
+            מהפרת תנאי שימוש אלה על ידי המשתמש בקשר עם שימוש שיעשה באתר, לרבות
+            בגין כל הפרה של תקנון זה ושל כל דין, ובגין כל נזק, לרבות נזק גופני
+            ומוות שייגרם לצד שלישי בקשר עם מכירת ו/או קניית ו/או שימוש במוצרים
+            הנמכרים באתר, שימוש במידע, בתכנים המופיעים באתרים מקושרים או שהגישה
+            אליהם נעשית באמצעות האתר, או הנובעות מהם וכיו"ב.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    <u>שונות וסמכות שיפוט</u>
+</p>
+<ol start="56">
+    <li>
+        <p dir="rtl" align="right">
+            החברה והיא בלבד תהא רשאית להמחות, להעביר או לשעבד את זכויותיה
+            (ובכלל זה את זכותו לקבל תשלום מהלקוחות) ו/או את התחייבויותיה לכל צד
+            ג' לפי בחירתה וללא כל צורך בקבלת הסכמת הגולש, מראש ו/או בדיעבד.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            כל עניין הנובע ו/או הנוגע לשימוש באתר ו/או לתנאי שימוש אלה זה ידון
+            אך ורק בבית המשפט המוסמך בעיר ירושלים, וככל שמדובר על ערכאה מחוזית
+            – אך ורק בבית המשפט המחוזי בירושלים, ובהם בלבד.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            תנאי שימוש אלה, המהווים כאמור הסכם מחייב בין החברה לבין הגולש, ממצה
+            את ההסכמות בין הצדדים ובא במקום כל מצג ו/או התחייבות ו/או הסכמה
+            שניתנו בכתב ו/או בעל פה על ידי מי מהצדדים.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            שום ויתור, הנחה, הימנעות או שיהוי של החברה במימוש זכויותיה על פי
+            תנאי שימוש אלה זה לא יתפרש כוויתור או מניעה אלא אם נעשו בכתב.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            בכל מקרה של סתירה בין הוראות תקנון זה תגבר ההוראה המיטיבה עם החברה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            על אף האמור בכל דין, כל תביעה מצד גולש או צד שלישי כלשהו תתיישן אם
+            לא נתבעה תוך שנה מיום קרות העילה ו/או התגלותה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            כל ההודעות שישלחו לחברה יחשבו כאילו התקבלו ביום העסקים הבא לאחר
+            המועד אשר בו נתקבלו בפועל (ובתנאי שבידי הגולש מצויה אסמכתא על הקבלה
+            בפועל). במקרה של הודעות שישלחו לגולש באמצעות האתר, אלה יחשבו כאילו
+            נמסרו במועד בו נעשה השימוש הראשון בשירותי האתר לאחר משלוח ההודעה.
+        </p>
+    </li>
+    <li>
+        <p dir="rtl" align="right">
+            הודעות לחברה יש להעביר באמצעות דואר אלקטרוני לכתובת:
+            <a
+                href="mailto:hello@dibiz.com"
+            >hello@dibiz.com</a>.
+        </p>
+    </li>
+</ol>
+<p dir="rtl" align="right">
+    ט.ל.ח.
+</p>
+
+<style>
+body #biz-terms-wrap, body #biz-terms-wrap * {
+    direction: ltr;
+    text-align: left;
+}
+#biz-terms-wrap li {
+  line-height: 21pt;
+}
+</style>
+<div id="biz-terms-wrap">
+<p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt; text-align: center;">&nbsp;</p>
+<p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt; text-align: center;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 700; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">DIBIZ BIZ - COMMERCIAL USE TERMS AND CONDITIONS &nbsp;</span></p>
+<p style="height:1px;">&nbsp;</p>
+<ol style="margin-top: 0pt; margin-bottom: 0pt;">
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">This Commercial Use Terms and Conditions ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Terms</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">") constitute an integral part of the Agreement between _______________ ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Customer</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">") (</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">according to the specific cost proposal sent to the client</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">) and Tsupitsal Enterprises LTD (""</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Company</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">") by which the Company shall provide the Customer with the Services (as defined below) subject to the payment of the Fees (as defined below) and together with the Terms &amp; Conditions and Privacy Policy forms the agreement between the Customer and the Company ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Agreement</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">"). In case of a conflict between the various parts of the Agreement, the terms of these Terms shall prevail.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The Services shall include commercial license (non-exclusive, revocable, non-transferable, limited by scope and only for the duration of the Agreement) to use, using a DIBIZ + ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Solution</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">") user dashboard, _____ &nbsp;digital business cards per year (</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">according to the specific cost proposal sent to the client</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">)</span><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"> or any other amount agreed by the parties prior to each Renewal Term ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The Agreed Annual Plan</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">"), which has the following features and which allows the Customer to: </span></li>
+</ol>
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+<li style="list-style-type: disc; font-size: 12pt; font-family: 'Noto Sans Symbols'; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: 17.700000000000003pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Access design options. &nbsp;</span></li>
+<li style="list-style-type: disc; font-size: 12pt; font-family: 'Noto Sans Symbols'; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: 17.700000000000003pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Use additional Design Options not available under non-commercial license</span></li>
+<li style="list-style-type: disc; font-size: 12pt; font-family: 'Noto Sans Symbols'; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: 17.700000000000003pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Add unlimited images in gallery</span></li>
+<li style="list-style-type: disc; font-size: 12pt; font-family: 'Noto Sans Symbols'; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: 17.700000000000003pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Add unlimited Custom links</span></li>
+<li style="list-style-type: disc; font-size: 12pt; font-family: 'Noto Sans Symbols'; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: 17.700000000000003pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Add unlimited Videos in Video Gallery</span></li>
+<li style="list-style-type: disc; font-size: 12pt; font-family: 'Noto Sans Symbols'; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: 17.700000000000003pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Include a Contact Form </span></li>
+<li style="list-style-type: disc; font-size: 12pt; font-family: 'Noto Sans Symbols'; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: 17.700000000000003pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Remove DIBIZ ads</span></li>
+<li style="list-style-type: disc; font-size: 12pt; font-family: 'Noto Sans Symbols'; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: 17.700000000000003pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Use a custom domain</span></li>
+</ul>
+<p>&nbsp;</p>
+<ol style="margin-top: 0pt; margin-bottom: 0pt;">
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The Services shall also include the Support Services &amp; the Welcome Services, detailed below.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The Solution, its reputation, the know-how, the professional knowledge and any intellectual property rights vested in the Solution, is and shall remain the sole and exclusive property of the Company. Apart from the above Services, no right, patent, trademark or license related to the Solution is conferred upon to the Customer under the Agreement.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Company warrants to the Customer that it has the full rights to provide it the Services under this Agreement. Customer acknowledges that copyright and other industrial, intellectual and marketing rights in the Solution is and shall remain the property of the Company. Customer agrees to use the Solution solely for its own internal use, and agrees not to disassemble, reverse compile, or reverse engineer the Solution or take any action in order to derive a source code equivalent of the Solution, nor permit the use of the Solution by unauthorized persons. Customer agrees to promptly report to the Company any violations of these provisions by Customer's employees, consultants or agents of which Customer is aware of.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The Customer shall pay the Company, as a condition precedent for receiving the License and the Support Services for each 12 months term (the Initial Term or any Renewal Term) the yearly minimum fee agreed for that term and shall do so no later than 14 days prior to the commencement of that term. For the Initial Term, Customer shall pay the Company a net sum of ______$ (___________________________ US Dollars). (</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">according to the specific cost proposal sent to the client</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">)</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Upon receipt of the yearly minimum fee the Company shall provide the Customer with a username and password which shall enable the Customer to use the License for that particular 12 months term. </span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Customer acknowledges and agrees that the Agreed Annual Plan per each term reflects its needs as communicated to the Company for that term and it is committed to that Plan for that term. Customer cannot downgrade the Plan during that term, but can choose to upgrade it at any time. &nbsp;For each additional digital business card over and above the Agreed Annual Plan, during each year of the Agreement, Customer shall pay the Company a net sum of $____ (______ US Dollars) per month of use. (</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">according to the specific cost proposal sent to the client</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">)</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Payments for the additional digital business cards are to be made no later than 30 days from the end of the month they were produced. </span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The yearly minimum fee and any other Fees for the Services are to be wire transferred by the Customer to Company's bank account or via PayPal services. Customer shall be responsible for any commissions, charges or any other payments required by the Customer's bank to facilitate the transfer of the Fees to the Company under this Agreement.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The Customer acknowledges that non-payment of the yearly minimum fee shall result in the immediate revocation of the License and termination of this Agreement without derogating from any right Company may have under this Agreement or the applicable law.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Upon receipt of any fees, Company shall issue the Customer a lawful invoice. Overdue payments shall accrue interest of 1% per month and subject to increases in the Israeli Consumer Price Index until fully paid. Under no circumstances shall the Customer deduct sums from any Fees due to Company under this Agreement without Company's prior written consent.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All payments under this Agreement shall be exclusive of any value added (e.g. tax) which shall be payable by the Customer to the Company, if applicable.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Company shall use reasonable endeavors to correct bugs and other problem encountered in the Solution and in general shall be available for support services, by e-mail only, Sunday to Thursday between 09:00 &ndash; 17:00 Israel local time, excluding national holidays ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Support Services</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">"). For the avoidance of any doubt, Support Services includes updates to the user dashboard but do not include providing the Customer with a version which includes additional features not included in the version currently used by the Customer.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">In addition, and at no cost to the Customer, available from the Effective Date, Company shall offer the Customer a one-time 1.5 hours' remote tutorial on the usage of the management tool and also the service of Company's in house designer for the design of the Customer's first digital business card ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Welcome Services</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">"). </span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">In no event shall Company be liable for an act or omission by third parties not under its direct control, force majeure events, loss of data, profits, goodwill, loss of anticipated savings, lost computer time, cost of purchasing replacing services or products, or any other indirect, incidental, special, consequential, exemplary or punitive damages arising out of or in any way connected with the Services. In no event shall Company's cumulative liability for any damages caused to the Customer as a result of Company's act or omission under this Agreement, exceed the amount paid by the customer to Company under this Agreement preceding the event(s) giving rise to Company's liability.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The customer shall not assign or transfer its rights and obligation under the Agreement, to any third party, without Company's prior written consent.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Under no circumstances &ndash; unless compelled so by applicable law &ndash; shall Company convey to 3</span><span style="font-size: 4.8pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: super; white-space: pre-wrap;">rd</span><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"> parties data related to the Customer or its employees ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Customer Data</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">"). Company shall not access or interact with Customer Data unless allowed to do so by the Customer in order to provide it with the Support Services.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The Initial Term of this Agreement shall commence upon receipt by the Company of the fee stated in section &lrm;6 above ("Effective Date") and shall be in effect for a minimum duration of 12 months from that fate ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Initial Term</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">"). Subject to the Payment of the yearly minimum fee, as the case may be, the each term shall be extended for additional 12 months periods ("</span><strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Renewal Terms</span></strong><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">") each time. Notwithstanding the above each party may terminate the Agreement: (a) by providing a notice to the other party of its intention not to renew the Agreement 60 days prior to the expiration of the Initial Term or any Renewal Term (b) at any time upon material breach of the other party obligations if not cured within 7 business days from receipt of a written notice detailing such breach (c) by the Customer no later than 30 days after the commencement of the Initial Term.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The Customer acknowledges that the Services are provided "AS IS" and to the best of Company's professional capabilities without any warranty not included specifically in this Agreement, including without limitation, the warranties of merchantability or fitness for a particular purpose.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">This Agreement constitutes the entire agreement between the Customer and the Company related to the Services and they supersede all prior or contemporaneous oral or written communications, proposals and representations with respect to the Services or any other subject matter covered by the Agreement. To the extent. If any provision of the Agreement is held to be void, invalid, unenforceable or illegal, the other provisions shall continue in full force and effect.</span></li>
+<li style="list-style-type: decimal; font-size: 11pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; margin-left: -0.14999999999999858pt;"><span style="font-size: 12pt; font-family: Calibri; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The laws of the state of Israel shall govern these Terms and each party submits itself to the exclusive local jurisdictions of the legal courts located in Tel-Aviv, Israel.</span></li>
+</ol>
+<p>&nbsp;</p>
+</div>
+
+    	</div>	
+        
+        
+    </body>
+
+
+<!-- Mirrored from www.dibiz.com/he/terms by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2021 04:04:20 GMT -->
+</html>
+
+
+<!-- This is the modal for cards with fax and in emerald design -->
